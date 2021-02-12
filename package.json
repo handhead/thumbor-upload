@@ -1,5 +1,5 @@
 {
-  "name": "@thumbor/upload",
+  "name": "thumbor-upload",
   "version": "1.0.0",
   "description": "Thumbor Upload",
   "private": false,
