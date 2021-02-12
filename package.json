@@ -2,6 +2,7 @@
   "name": "@thumbor/upload",
   "version": "1.0.0",
   "description": "Thumbor Upload",
+  "private": false,
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha",
@@ -13,6 +14,7 @@
   },
   "keywords": [
     "thumbor",
+    "image",
     "upload"
   ],
   "author": "Vinícius Rodrigues <@viniciusclerod>",
