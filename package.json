@@ -1,0 +1,35 @@
+{
+  "name": "@thumbor/upload",
+  "version": "1.0.0",
+  "description": "Thumbor Upload",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handhead/thumbor-upload.git"
+  },
+  "keywords": [
+    "thumbor",
+    "upload"
+  ],
+  "author": "Vinícius Rodrigues <@viniciusclerod>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/handhead/thumbor-upload/issues"
+  },
+  "homepage": "https://github.com/handhead/thumbor-upload#readme",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0",
+    "fs": "^0.0.1-security",
+    "mocha": "^8.3.0",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0"
+  }
+}
