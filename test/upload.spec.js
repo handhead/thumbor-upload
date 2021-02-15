@@ -27,21 +27,21 @@ describe("Thumbor Upload", () => {
     });
     describe('Create', () => {
         upload = new Upload(process.env.THUMBOR_URL);
-        const data = fs.readFileSync(path.resolve(__dirname, 'image.png'));
+        const data = fs.readFileSync(path.resolve(__dirname, 'logo-thumbor.png'));
         // const response = await fetch('https://thumbor.readthedocs.io/en/latest/_images/logo-thumbor.png');
         // const data = await response.buffer();
         it('is an function', () => {
             expect(upload.create).to.be.an('function');
         });
         it('with unsupported media type', done => {
-            upload.create('image.png', 'image/png', 'image.png')
+            upload.create('logo-thumbor.png', 'image/png', 'logo-thumbor.png')
                 .then(({ status }) => {
                     expect(status).to.equal(415);
                     done();
                 }).catch((error) => done(error))
         });
         it('with success', done => {
-            upload.create(data, 'image/png', 'image.png')
+            upload.create(data, 'image/png', 'logo-thumbor.png')
                 .then(({ status, headers }) => {
                     console.log('headers', typeof headers, headers)
                     console.log('location', typeof headers.get('location'), headers.get('location'))
