@@ -1,6 +1,6 @@
 {
   "name": "thumbor-upload",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Thumbor Upload",
   "private": false,
   "main": "./lib/index.js",
